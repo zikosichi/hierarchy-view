@@ -18,6 +18,12 @@ section{
     justify-content: center;
     flex-direction: column;
     padding: 50px 0;
+	position: relative;
+    .github-badge{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
     h1{
         text-align: center;
         margin-bottom: 70px;
@@ -29,7 +35,6 @@ section{
         justify-content: center;
     }
 }
-
 
 // BASIC STYLE
 .basic-style{
@@ -97,70 +102,4 @@ p.simple-card{
             }
         }
     }
-}
-
-.hv-wrapper{
-  display: flex;
-  justify-content: center;
-  .hv-item{
-    display: flex;
-    flex-direction: column;
-    .hv-item-parent{
-      margin-bottom: $bottom-margin;
-      position: relative;
-      display: flex;
-      justify-content: center;      
-      &:after{
-        position: absolute;
-        content: '';
-        width: $line-width;
-        height: $bottom-margin / 2;
-        bottom: 0;
-        left: 50%;
-        background-color: $line-color;
-        transform: translateY(100%);
-      }
-    }
-    .hv-item-children{
-      display: flex;
-      justify-content: center;
-      .hv-item-child{
-        padding: 0 15px;
-        position: relative;
-        
-        &:before, &:after{
-          content: '';
-          position: absolute;
-          background-color: $line-color;
-          left: 0;
-        }
-        
-        &:before{
-          left: 50%;
-          top: 0;
-          transform: translateY(-100%);
-          width: $line-width;
-          height: $bottom-margin / 2;
-          
-        }
-        
-        &:after{
-          top: -$bottom-margin / 2;
-          transform: translateY(-100%);
-          height: $line-width;
-          width: 100%;
-        }
-        
-        &:first-child:after{
-          left: 50%;
-          width: 50%;
-        }
-
-        &:last-child:after{
-          width: calc(50% + 1px);
-        }        
-        
-      }
-    }
-  }
 }

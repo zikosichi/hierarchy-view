@@ -10,7 +10,12 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 0; }
+  padding: 50px 0;
+  position: relative; }
+  section .github-badge {
+    position: absolute;
+    top: 0;
+    left: 0; }
   section h1 {
     text-align: center;
     margin-bottom: 70px; }
@@ -70,51 +75,3 @@ p.simple-card {
         left: 50%;
         top: 0;
         transform: translateY(-100%); }
-
-.hv-wrapper {
-  display: flex;
-  justify-content: center; }
-  .hv-wrapper .hv-item {
-    display: flex;
-    flex-direction: column; }
-    .hv-wrapper .hv-item .hv-item-parent {
-      margin-bottom: 50px;
-      position: relative;
-      display: flex;
-      justify-content: center; }
-      .hv-wrapper .hv-item .hv-item-parent:after {
-        position: absolute;
-        content: '';
-        width: 2px;
-        height: 25px;
-        bottom: 0;
-        left: 50%;
-        background-color: rgba(255, 255, 255, 0.7);
-        transform: translateY(100%); }
-    .hv-wrapper .hv-item .hv-item-children {
-      display: flex;
-      justify-content: center; }
-      .hv-wrapper .hv-item .hv-item-children .hv-item-child {
-        padding: 0 15px;
-        position: relative; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:before, .hv-wrapper .hv-item .hv-item-children .hv-item-child:after {
-          content: '';
-          position: absolute;
-          background-color: rgba(255, 255, 255, 0.7);
-          left: 0; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:before {
-          left: 50%;
-          top: 0;
-          transform: translateY(-100%);
-          width: 2px;
-          height: 25px; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:after {
-          top: -25px;
-          transform: translateY(-100%);
-          height: 2px;
-          width: 100%; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:first-child:after {
-          left: 50%;
-          width: 50%; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:last-child:after {
-          width: calc(50% + 1px); }
