@@ -1,0 +1,24 @@
+{
+  "name": "hierarchi-view",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zikosichi/hierarchi-view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zikosichi/hierarchi-view/issues"
+  },
+  "homepage": "https://github.com/zikosichi/hierarchi-view#readme",
+  "devDependencies": {
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0"
+  }
+}
