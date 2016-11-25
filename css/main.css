@@ -20,8 +20,8 @@ section {
     text-align: center;
     margin-bottom: 70px; }
   section .hv-container {
-    display: flex;
     flex-grow: 1;
+    overflow: auto;
     justify-content: center; }
 
 .basic-style {

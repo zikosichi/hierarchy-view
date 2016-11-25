@@ -1,9 +1,9 @@
 .hv-wrapper {
-  display: flex;
-  justify-content: center; }
+  display: flex; }
   .hv-wrapper .hv-item {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: auto; }
     .hv-wrapper .hv-item .hv-item-parent {
       margin-bottom: 50px;
       position: relative;

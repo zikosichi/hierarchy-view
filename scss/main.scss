@@ -29,8 +29,9 @@ section{
         margin-bottom: 70px;
     }
     .hv-container{
-        display: flex;
+        // display: flex;
         flex-grow: 1;
+		overflow: auto;
         // align-items: center;
         justify-content: center;
     }

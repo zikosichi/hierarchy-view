@@ -6,10 +6,11 @@ $bg-color: #EFE6E2;
 
 .hv-wrapper{
   display: flex;
-  justify-content: center;
+//   justify-content: center;
   .hv-item{
     display: flex;
     flex-direction: column;
+    margin: auto;
     .hv-item-parent{
       margin-bottom: $bottom-margin;
       position: relative;
