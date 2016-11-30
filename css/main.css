@@ -6,7 +6,7 @@ html, body {
   margin: 0; }
 
 section {
-  min-height: calc(100%-30px);
+  min-height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
