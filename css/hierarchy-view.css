@@ -24,7 +24,7 @@
       .hv-wrapper .hv-item .hv-item-children .hv-item-child {
         padding: 0 15px;
         position: relative; }
-        .hv-wrapper .hv-item .hv-item-children .hv-item-child:before, .hv-wrapper .hv-item .hv-item-children .hv-item-child:after {
+        .hv-wrapper .hv-item .hv-item-children .hv-item-child:before, .hv-wrapper .hv-item .hv-item-children .hv-item-child:not(:only-child):after {
           content: '';
           position: absolute;
           background-color: rgba(255, 255, 255, 0.7);
