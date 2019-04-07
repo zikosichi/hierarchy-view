@@ -45,3 +45,5 @@
           width: 50%; }
         .hv-wrapper .hv-item .hv-item-children .hv-item-child:last-child:after {
           width: calc(50% + 1px); }
+        .hv-wrapper .hv-item .hv-item-children .hv-item-child:only-child:after {
+          width: 0; }
